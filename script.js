@@ -22,6 +22,36 @@ function go(currentStep,nextStep){
         dBlock = finalDiv
     }
 
-
     dBlock.style.display = 'block'
 } 
+
+function validate(){
+     
+    const peso   = document.getElementById('peso')
+    const altura = document.getElementById('altura')
+    peso.style.border   = 'none'
+    altura.style.border = 'none'
+
+
+    if(!peso.value || !altura.value)
+    {
+
+        if(!peso.value && !altura.value)
+        {
+            peso.style.border = '1px solid red'
+            altura.style.border = '1px solid red'
+        }
+        else if(!peso.value)
+        {
+            peso.style.border = '1px solid red'
+        }
+        else
+        {
+            altura.style.border = '1px solid red'
+        }
+    }
+    else
+    {
+        console.log('Tudo OK!! Pode calcular')
+    }
+}
