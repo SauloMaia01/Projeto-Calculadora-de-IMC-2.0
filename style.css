@@ -30,7 +30,7 @@ button:hover{
     background-color: steelblue;
 }
 
-.first-step, .second-step{
+.final-step, .second-step{
     display: none;
 }
 
