@@ -40,3 +40,7 @@ input{
     border: none;
     outline: none; /* Retira o Contorno em volta do input */
 }
+
+Resultado{
+    font-size: 25px;
+}
